@@ -1,0 +1,71 @@
+/* Загальні стилі для вікна */
+.root {
+    -fx-background-color: #607D8B; /* Змінено колір фону на більш м'який відтінок */
+}
+
+/* Оновлені стилі для тексту заголовка */
+.register-title-text {
+    -fx-font-size: 32px; /* Збільшено розмір шрифту */
+    -fx-font-family: "Segoe UI"; /* Змінено на більш сучасний шрифт */
+    -fx-fill: #FFFFFF; /* Білий колір тексту для кращої видимості */
+}
+
+/* Стилі для текстових полів */
+.register-text-field {
+    -fx-pref-width: 350px; /* Збільшено ширину */
+    -fx-pref-height: 45px; /* Збільшено висоту */
+    -fx-font-size: 18px; /* Збільшено розмір шрифту */
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px; /* Збільшено радіус закруглення */
+    -fx-border-color: #B0BEC5; /* Колір рамки */
+    -fx-border-radius: 10px; /* Закруглення рамки */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5); /* Тінь */
+}
+
+/* Стилі для кнопок */
+.register-button {
+    -fx-background-color: #FF5722; /* Змінено колір кнопок на більш яскравий */
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 18px; /* Збільшено розмір шрифту */
+    -fx-background-radius: 10px; /* Закруглення країв */
+    -fx-pref-width: 150px; /* Збільшено ширину */
+    -fx-pref-height: 45px; /* Збільшено висоту */
+    -fx-border-color: #FFCCBC; /* Колір рамки */
+    -fx-border-radius: 10px; /* Закруглення рамки */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5); /* Тінь */
+}
+
+/* Стилі для кнопки регістрації при наведенні */
+.register-button:hover {
+    -fx-background-color: #FF7043; /* Змінено колір при наведенні */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5); /* Посилено тінь */
+}
+
+/* Стилі для кнопки регістрації при натисканні */
+.register-button:pressed {
+    -fx-background-color: #E64A19; /* Змінено колір при натисканні */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2); /* Зменшено тінь */
+}
+.login-button {
+    -fx-background-color: #4CAF50; /* Зелений колір для відрізнення від кнопки реєстрації */
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px; /* Трохи менший розмір шрифту, щоб підкреслити, що це альтернативна дія */
+    -fx-background-radius: 10px; /* Закруглення країв */
+    -fx-pref-width: 250px; /* Ширина */
+    -fx-pref-height: 40px; /* Висота */
+    -fx-border-color: #C8E6C9; /* Колір рамки */
+    -fx-border-radius: 10px; /* Закруглення рамки */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5); /* Тінь */
+}
+
+/* Стилі для кнопки "Увійти" при наведенні */
+.login-button:hover {
+    -fx-background-color: #66BB6A; /* Змінено колір при наведенні */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5); /* Посилено тінь */
+}
+
+/* Стилі для кнопки "Увійти" при натисканні */
+.login-button:pressed {
+    -fx-background-color: #388E3C; /* Змінено колір при натисканні */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2); /* Зменшено тінь */
+}
