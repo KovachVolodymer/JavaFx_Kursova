@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.layout.VBox?>
 <AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.example.project2.controller.RegisterController" stylesheets="@register-style.css">
+            fx:controller="org.example.project2.controller.RegisterController" stylesheets="@../style/register-style.css">
    <VBox alignment="CENTER" spacing="20.0" layoutX="200.0" layoutY="100.0">
       <children>
          <Text text="Реєстрація" styleClass="register-title-text"/>

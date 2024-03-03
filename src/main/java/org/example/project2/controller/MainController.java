@@ -23,22 +23,10 @@ public class MainController {
     @FXML
     public void onRegisterButtonClick(ActionEvent actionEvent) {
         try {
-            // Завантаження FXML для нової форми
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/org/example/project2/register.fxml"));
-            Parent root = fxmlLoader.load();
-
-            // Створення нової сцени
-            Scene scene = new Scene(root);
-
-            // Створення нового вікна (Stage)
-            Stage registerStage = new Stage();
-            registerStage.setTitle("Форма Реєстрації");
-            registerStage.setMinWidth(400);
-            registerStage.setMinHeight(600);
-            registerStage.setScene(scene);
-            ((Node)(actionEvent.getSource())).getScene().getWindow().hide();
-            // Відображення вікна
-            registerStage.show();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/org/example/project2/authorization/register.fxml"));
+            Parent registerRoot = fxmlLoader.load();
+            Scene currentScene = ((Node)actionEvent.getSource()).getScene();
+            currentScene.setRoot(registerRoot);
         } catch (IOException e) {
             e.printStackTrace();
         }

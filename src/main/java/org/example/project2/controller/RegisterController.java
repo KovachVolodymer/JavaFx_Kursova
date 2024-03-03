@@ -13,12 +13,10 @@ public class RegisterController {
     @FXML
     private void switchToLogin(ActionEvent event) throws IOException {
         // Завантаження FXML для форми логіна
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/org/example/project2/login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/org/example/project2/authorization/login.fxml"));
         Parent loginRoot = fxmlLoader.load();
-
         // Отримання поточної сцени з події
         Scene currentScene = ((Node)event.getSource()).getScene();
-
         // Встановлення нової сцени
         currentScene.setRoot(loginRoot);
     }
