@@ -45,6 +45,7 @@
             <version>5.0.0</version>
         </dependency>
 
+
     </dependencies>
 
     <build>
@@ -82,7 +83,7 @@
     </build>
     <repositories>
         <repository>
-            <id/>
+            <id>default-cli</id>
             <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
     </repositories>

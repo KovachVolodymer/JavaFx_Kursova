@@ -12,10 +12,10 @@
    <VBox alignment="CENTER" spacing="20.0" layoutX="200.0" layoutY="100.0">
       <children>
          <Text text="Реєстрація" styleClass="register-title-text"/>
-         <TextField promptText="name" styleClass="register-text-field" />
-         <PasswordField promptText="password" styleClass="register-text-field" />
-         <PasswordField promptText="confirm password" styleClass="register-text-field" />
-         <Button text="Реєстрація" styleClass="register-button" />
+         <TextField promptText="name" styleClass="register-text-field" fx:id="nameField" />
+         <PasswordField promptText="password" styleClass="register-text-field" fx:id="passwordField" />
+         <PasswordField promptText="confirm password" styleClass="register-text-field" fx:id="confirmPasswordField" />
+         <Button text="Реєстрація" styleClass="register-button" onAction="#register" />
          <Button text="Вже зареєстровані? Увійти" styleClass="login-button" onAction="#switchToLogin"/>
       </children>
    </VBox>

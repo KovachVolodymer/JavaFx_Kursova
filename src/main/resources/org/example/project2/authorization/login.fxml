@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="org.example.project2.controller.MainController" stylesheets="@../style/login-style.css">
+            fx:controller="org.example.project2.controller.LoginController" stylesheets="@../style/login-style.css">
    <VBox alignment="CENTER" spacing="20.0" layoutX="200.0" layoutY="100.0">
       <Text text="Вхід" styleClass="title-text"/>
       <TextField promptText="ім'я користувача" styleClass="text-field" />

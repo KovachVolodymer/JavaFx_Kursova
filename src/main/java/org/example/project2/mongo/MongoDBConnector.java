@@ -3,6 +3,7 @@ package org.example.project2.mongo;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.ConnectionString;
 
 public class MongoDBConnector {
     private MongoDatabase database;
