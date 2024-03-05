@@ -18,6 +18,14 @@ public class User {
 
     }
 
+    public static User getByName(String username) {
+        MongoDBConnector connector = new MongoDBConnector();
+        MongoCollection<Document> users = connector.getDatabase().getCollection("user");
+        Document user = users.find(new Document("login", username)).first();
+        assert user != null;
+        return new User(user.getString("login"), user.getString("password"));
+    }
+
     public String getUsername() {
         return username;
     }
@@ -48,6 +56,16 @@ public class User {
                 .append("password", user.getPassword());
         users.insertOne(newUser);
     }
+
+
+    public static boolean existsByName(String username) {
+        MongoDBConnector connector = new MongoDBConnector();
+        MongoCollection<Document> users = connector.getDatabase().getCollection("user");
+        Document user = users.find(new Document("login", username)).first();
+        return user != null;
+    }
+
+
 
 
 

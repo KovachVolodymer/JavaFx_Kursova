@@ -4,6 +4,7 @@ module org.example.project2 {
     requires org.mongodb.driver.sync.client;
     requires org.mongodb.driver.core;
     requires org.mongodb.bson;
+    requires jbcrypt;
 
 
     opens org.example.project2 to javafx.fxml;
