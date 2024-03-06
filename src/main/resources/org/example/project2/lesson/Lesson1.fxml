@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="lesson1AnchorPane" prefHeight="600.0"
+            prefWidth="800.0" stylesheets="@../lessonStyle/lesson1style.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.project2.lesson.Lesson1Controller">
+    <children>
+        <!-- Оновлено розміри та розташування ScrollPane -->
+        <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="0" layoutY="0" prefHeight="600.0" prefWidth="800.0">
+            <content>
+                <!-- Оновлено розміри AnchorPane для вміщення всього контенту -->
+                <AnchorPane prefHeight="900.0" prefWidth="800.0"> <!-- Збільшено prefHeight для вміщення всього контенту -->
+                    <children>
+                        <Text styleClass="title" text="Урок 1: Вступ до JavaScript" layoutX="50" layoutY="20"/>
+                        <Label styleClass="description" text="JavaScript є динамічною, об'єктно-орієнтованою мовою програмування, яка дозволяє створювати інтерактивний контент на веб-сторінках..." wrapText="true" layoutX="50" layoutY="60" prefWidth="700"/>
+                        <Label styleClass="description" text="Однією з ключових особливостей JavaScript є її здатність взаємодіяти з HTML-документами та створювати динамічний контент. Мова 'розуміє' DOM (Document Object Model) і може використовувати його для маніпулювання сторінками веб-сайту в реальному часі." wrapText="true" layoutX="50" layoutY="160" prefWidth="700"/>
+                        <Label styleClass="description" text="JavaScript також відіграє важливу роль у розробці серверних додатків, мобільних додатків, ігор та інших типів програмного забезпечення, завдяки таким технологіям як Node.js." wrapText="true" layoutX="50" layoutY="260" prefWidth="700"/>
+                        <Label styleClass="description" text="Додатковий опис та розділи про основи JavaScript, включаючи змінні, типи даних, функції, об'єкти, масиви, цикли, умовні оператори, події, DOM маніпуляції та інше." wrapText="true" layoutX="50" layoutY="360" prefWidth="700"/>
+                        <Label styleClass="description" text="Для початку вивчення JavaScript оберіть урок, який вас цікавить." wrapText="true" layoutX="50" layoutY="460" prefWidth="700"/>
+                        <Label styleClass="description" text="Для того, щоб перевірити свої знання, ви можете пройти тест, який відповідає даному уроку." wrapText="true" layoutX="50" layoutY="560" prefWidth="700"/>
+                        <Button onAction="#openQuizWindow" styleClass="quizButton" text="Пройти тест" layoutX="350" layoutY="660"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

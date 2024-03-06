@@ -30,7 +30,7 @@ public class RegisterController {
 
     @FXML
     private void switchToLogin(ActionEvent event) throws IOException {
-        fxmlUtil.switchScene(event, "/org/example/project2/authorization/login.fxml");
+        fxmlUtil.switchScene(event, "/org/example/project2/authorization/login.fxml", 800, 500);
     }
     @FXML
     private void register(ActionEvent event) {
@@ -60,7 +60,7 @@ public class RegisterController {
             user.save(user);
 
             // Перехід на головну сторінку
-            fxmlUtil.switchScene(event, "/org/example/project2/mainPage.fxml");
+            fxmlUtil.switchScene(event, "/org/example/project2/mainPage.fxml", 800, 500);
         } catch (Exception e) {
             e.printStackTrace();
             fxmlUtil.showAlert("Помилка", "Помилка під час реєстрації: " + e.getMessage());

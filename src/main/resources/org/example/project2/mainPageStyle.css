@@ -1,0 +1,65 @@
+/* Загальні стилі для AnchorPane */
+.anchor-pane {
+    -fx-background-color: #f0f4f7;
+}
+
+/* Стилі для тексту привітання */
+.text-welcome {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #2e5077;
+}
+
+/* Стилі для тексту опису */
+.text-description {
+    -fx-font-size: 16px;
+    -fx-fill: #555;
+}
+
+/* Стилі для VBox, що містить кнопки */
+.vbox {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20;
+    -fx-spacing: 10; /* Відстань між елементами */
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5; /* Закруглені кути */
+}
+
+/* Стилі для кнопок */
+.button {
+    -fx-background-color: #5a99d4;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #3d70a4;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5; /* Закруглені кути для кнопок */
+    -fx-padding: 10 20; /* Вертикальний та горизонтальний відступ */
+}
+
+.button:hover {
+    -fx-background-color: #3d70a4;
+}
+
+/* Стилі для кнопки, коли вона натиснута */
+.button:pressed {
+    -fx-background-color: #2e5077;
+}
+
+.text-flow {
+    -fx-padding: 10;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* Стилі для тексту в середині TextFlow */
+.text-course-description {
+    -fx-font-size: 14px;
+    -fx-fill: #333;
+}
+

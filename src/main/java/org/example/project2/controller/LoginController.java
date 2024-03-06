@@ -30,7 +30,7 @@ public class LoginController {
     @FXML
     public void onRegisterButtonClick(ActionEvent actionEvent) {
         try {
-            fxmlUtil.switchScene(actionEvent, "/org/example/project2/authorization/register.fxml");
+            fxmlUtil.switchScene(actionEvent, "/org/example/project2/authorization/register.fxml", 800, 500);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -45,7 +45,6 @@ public class LoginController {
             fxmlUtil.showAlert("Помилка", "Всі поля повинні бути заповнені!");
             return;
         }
-
         User user = User.getByName(login);
         if (user == null) {
             fxmlUtil.showAlert("Помилка", "Користувача з таким іменем не існує!");
@@ -55,15 +54,10 @@ public class LoginController {
             fxmlUtil.showAlert("Помилка", "Неправильний пароль!");
             return;
         }
-
         try {
-            fxmlUtil.switchScene(actionEvent, "/org/example/project2/mainPage.fxml");
+            fxmlUtil.switchScene(actionEvent, "/org/example/project2/mainPage.fxml", 800, 500);
         } catch (IOException e) {
             e.printStackTrace();
         }
         }
-    
-
-    
-    
 }

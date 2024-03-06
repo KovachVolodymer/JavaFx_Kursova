@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.layout.HBox?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.example.project2.controller.MainPageController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="anchorPane" stylesheets="@mainPageStyle.css" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.project2.controller.MainPageController"
+            prefHeight="600.0" prefWidth="800.0">
+    <children>
+        <HBox alignment="CENTER" layoutY="20.0" prefWidth="800.0">
+            <children>
+                <Text text="Ласкаво просимо до курсу JavaScript!" styleClass="text-welcome"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutY="50.0" prefWidth="800.0">
+            <children>
+                <Text text="Оберіть урок, щоб почати вивчення." styleClass="text-description"/>
+            </children>
+        </HBox>
+        <VBox layoutY="80.0" spacing="10" styleClass="vbox" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <children>
+                <Button fx:id="lesson1Button" text="Урок 1: Вступ до JavaScript" onAction="#onLesson1Click"/>
+                <Button fx:id="lesson2Button" text="Урок 2: Змінні та типи даних" onAction="#onLesson2Click"/>
+                <Button fx:id="lesson3Button" text="Урок 3: Умовні оператори" onAction="#onLesson3Click"/>
+                <Button fx:id="lesson4Button" text="Урок 4: Цикли" onAction="#onLesson4Click"/>
+                <Button fx:id="lesson5Button" text="Урок 5: Функції" onAction="#onLesson5Click"/>
+                <Button fx:id="lesson6Button" text="Урок 6: Об'єкти та масиви" onAction="#onLesson6Click"/>
+            </children>
+        </VBox>
+    </children>
 </AnchorPane>
