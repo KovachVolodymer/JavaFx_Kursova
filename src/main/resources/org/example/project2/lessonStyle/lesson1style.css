@@ -1,0 +1,31 @@
+.root {
+    -fx-background-color: #f0f0f0; /* Змініть колір фону на світлий сірий */
+}
+
+.title {
+    -fx-font-size: 36px; /* Збільшення розміру шрифту для заголовка */
+    -fx-font-weight: bold;
+    -fx-text-fill: #303030; /* Темно-сірий колір тексту */
+}
+
+.description {
+    -fx-font-size: 20px; /* Збільшення розміру шрифту для опису */
+    -fx-wrap-text: true;
+    -fx-text-fill: #505050; /* Середньо-сірий колір тексту */
+}
+
+.quizButton {
+    -fx-background-color: #0078D7; /* Колір фону кнопки */
+    -fx-text-fill: white; /* Колір тексту на кнопці */
+    -fx-font-weight: bold;
+    -fx-font-size: 18px; /* Збільшення розміру шрифту для кнопки */
+}
+
+.scroll-pane {
+    -fx-background: #f0f0f0; /* Колір фону для ScrollPane, якщо використовується */
+    -fx-border-color: transparent; /* Зробити рамку ScrollPane прозорою */
+}
+
+.label {
+    -fx-padding: 10px; /* Додати відступи для тексту всередині міток */
+}

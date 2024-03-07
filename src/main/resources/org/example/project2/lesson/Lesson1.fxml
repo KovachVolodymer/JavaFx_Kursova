@@ -1,30 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="lesson1AnchorPane" prefHeight="600.0"
-            prefWidth="800.0" stylesheets="@../lessonStyle/lesson1style.css"
+<AnchorPane fx:id="lesson1AnchorPane" prefHeight="880.0"
+            prefWidth="1450.0" stylesheets="@../lessonStyle/lesson1style.css"
             xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="org.example.project2.lesson.Lesson1Controller">
     <children>
-        <!-- Оновлено розміри та розташування ScrollPane -->
-        <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="0" layoutY="0" prefHeight="600.0" prefWidth="800.0">
-            <content>
-                <!-- Оновлено розміри AnchorPane для вміщення всього контенту -->
-                <AnchorPane prefHeight="900.0" prefWidth="800.0"> <!-- Збільшено prefHeight для вміщення всього контенту -->
-                    <children>
-                        <Text styleClass="title" text="Урок 1: Вступ до JavaScript" layoutX="50" layoutY="20"/>
-                        <Label styleClass="description" text="JavaScript є динамічною, об'єктно-орієнтованою мовою програмування, яка дозволяє створювати інтерактивний контент на веб-сторінках..." wrapText="true" layoutX="50" layoutY="60" prefWidth="700"/>
-                        <Label styleClass="description" text="Однією з ключових особливостей JavaScript є її здатність взаємодіяти з HTML-документами та створювати динамічний контент. Мова 'розуміє' DOM (Document Object Model) і може використовувати його для маніпулювання сторінками веб-сайту в реальному часі." wrapText="true" layoutX="50" layoutY="160" prefWidth="700"/>
-                        <Label styleClass="description" text="JavaScript також відіграє важливу роль у розробці серверних додатків, мобільних додатків, ігор та інших типів програмного забезпечення, завдяки таким технологіям як Node.js." wrapText="true" layoutX="50" layoutY="260" prefWidth="700"/>
-                        <Label styleClass="description" text="Додатковий опис та розділи про основи JavaScript, включаючи змінні, типи даних, функції, об'єкти, масиви, цикли, умовні оператори, події, DOM маніпуляції та інше." wrapText="true" layoutX="50" layoutY="360" prefWidth="700"/>
-                        <Label styleClass="description" text="Для початку вивчення JavaScript оберіть урок, який вас цікавить." wrapText="true" layoutX="50" layoutY="460" prefWidth="700"/>
-                        <Label styleClass="description" text="Для того, щоб перевірити свої знання, ви можете пройти тест, який відповідає даному уроку." wrapText="true" layoutX="50" layoutY="560" prefWidth="700"/>
-                        <Button onAction="#openQuizWindow" styleClass="quizButton" text="Пройти тест" layoutX="350" layoutY="660"/>
-                    </children>
-                </AnchorPane>
-            </content>
-        </ScrollPane>
+        <Text layoutX="50" layoutY="20" styleClass="title" text="Урок 1: Вступ до JavaScript" />
+        <Label layoutX="50.0" layoutY="67.0" styleClass="description" text="JavaScript - це високорівнева, інтерпретована мова програмування, що використовується для створення динамічних інтерактивних веб-сторінок. Вона дозволяє вносити зміни на сторінці без перезавантаження, обробляти події користувача, взаємодіяти з сервером та багато іншого." wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" /> <Label layoutX="41.0" layoutY="262.0" prefHeight="159.0" prefWidth="1372.0" styleClass="description" text="Однією з ключових особливостей JavaScript є її здатність взаємодіяти з HTML-документами та створювати динамічний контент. Мова 'розуміє' DOM (Document Object Model) і може використовувати його для маніпулювання сторінками веб-сайту в реальному часі." wrapText="true" />
+        <Label layoutX="50.0" layoutY="139.0" prefHeight="180.0" prefWidth="1372.0" styleClass="description" text="JavaScript була розроблена компанією Netscape в 1995 році. Перша версія мови називалася Mocha, але потім була перейменована в LiveScript, а згодом - в JavaScript. У 1997 році мова була стандартизована за ініціативою компанії Netscape та Ecma International, що призвело до виникнення стандарту ECMAScript. Від тих пір JavaScript постійно розвивалася, додавалися нові функції та можливості, що дозволило їй стати однією з найпопулярніших мов програмування у світі." wrapText="true" />
+        <Label layoutX="41.0" layoutY="329.0" prefHeight="227.0" prefWidth="1334.0" styleClass="description" text="JavaScript відіграє критичну роль у створенні сучасних веб-додатків. Вона використовується для додавання динамічного контенту, обробки подій, взаємодії з користувачем та багато іншого. JavaScript дозволяє створювати інтерактивні, відчутні застосунки, які реагують на дії користувача та забезпечують більш приємний досвід використання веб-сторінок." wrapText="true" />
+        <Button layoutX="13.0" layoutY="589.0" onAction="#openQuizWindow" prefHeight="0.0" prefWidth="84.0" styleClass="quizButton" text="назад" />
+      <Label layoutX="154.0" layoutY="518.0" prefHeight="227.0" prefWidth="1612.0" styleClass="description" text="JavaScript є однією з ключових мов програмування для як фронтенд, так і бекенд розробки. На фронтенді вона використовується для створення взаємодії з користувачем, анімації, валідації форм, зміни стилів і багато іншого. На бекенді JavaScript за допомогою платформи Node.js дозволяє розробникам створювати серверні додатки, оброблювати запити та взаємодіяти з базами даних. Отже, вивчення JavaScript є критично важливим для будь-якого веб-розробника, незалежно від того, чи працює він на фронтенді, бекенді чи повномасштабних веб-додатках." wrapText="true" />
     </children>
 </AnchorPane>
