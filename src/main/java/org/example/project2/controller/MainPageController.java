@@ -27,12 +27,13 @@ public class MainPageController {
         Stage primaryStage = (Stage) currentScene.getWindow();
 
         // Встановлення повноекранного режиму
+        primaryStage.setMinWidth(1700);
+        primaryStage.setMinHeight(880);
         primaryStage.setFullScreen(true);
     }
 
     public void onLesson2Click(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/org/example/project2/lesson/Test.fxml"));
-        fxmlUtil.switchScene(actionEvent, "/org/example/project2/lesson/Test.fxml", 800, 1400);
+        fxmlUtil.switchScene(actionEvent, "/org/example/project2/lesson/Lesson2.fxml", 1700, 880, true);
     }
 
     public void onLesson3Click(ActionEvent actionEvent) {

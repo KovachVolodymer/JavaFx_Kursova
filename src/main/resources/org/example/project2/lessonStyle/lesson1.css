@@ -1,5 +1,5 @@
 .root {
-    -fx-background-color: #f0f0f0; /* Змініть колір фону на світлий сірий */
+    -fx-background-color: #F0F0F0; /* Світло-сірий колір фону */
 }
 
 .title {
@@ -20,12 +20,6 @@
     -fx-font-weight: bold;
     -fx-font-size: 18px; /* Збільшення розміру шрифту для кнопки */
 }
-
-.scroll-pane {
-    -fx-background: #f0f0f0; /* Колір фону для ScrollPane, якщо використовується */
-    -fx-border-color: transparent; /* Зробити рамку ScrollPane прозорою */
-}
-
 .label {
     -fx-padding: 10px; /* Додати відступи для тексту всередині міток */
 }

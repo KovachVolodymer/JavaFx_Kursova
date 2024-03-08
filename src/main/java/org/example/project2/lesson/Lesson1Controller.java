@@ -9,13 +9,25 @@ import javafx.stage.Stage;
 import org.example.project2.utils.FxmlUtil;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+import java.awt.Desktop;
+
 
 public class Lesson1Controller {
 
     FxmlUtil fxmlUtil = new FxmlUtil();
+    
+    public void backToMain(ActionEvent actionEvent) throws IOException {
+        fxmlUtil.switchScene(actionEvent, "/org/example/project2/mainPage.fxml", 800, 500, false);
+    }
 
-    @FXML
-    private void openQuizWindow(ActionEvent event) throws IOException {
-        fxmlUtil.switchScene(event,"/org/example/project2/quiz/QuizLesson1.fxml", 800, 600);
+    public void openWikipedia(ActionEvent event) {
+        try {
+            Desktop.getDesktop().browse(new URI("https://en.wikipedia.org/wiki/JavaScript"));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
     }
 }

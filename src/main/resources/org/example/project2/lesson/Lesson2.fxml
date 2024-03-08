@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="880.0" prefWidth="1700.0" stylesheets="@../lessonStyle/lesson2.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project2.lesson.Lesson2Controller">
+
+    <Label layoutX="20" layoutY="20" styleClass="label-header" text="Урок 2: Змінні та типи даних в JavaScript" />
+    <HBox layoutX="20" layoutY="120" spacing="15" />
+
+    <Hyperlink layoutX="1435.0" layoutY="825.0" onAction="#openWikipedia" styleClass="hyperlink" text="Learn more about JavaScript on Wikipedia" />
+    <VBox layoutX="31.0" layoutY="104.0" spacing="10">
+        <Label styleClass="label-header" text="Створення змінних у JavaScript:" />
+        <Label styleClass="label-text" text="Для створення змінних в JavaScript, використовуйте ключові слова let або const." />
+        <Label styleClass="label-text" text="Наприклад: let myNumber = 10; - це створення змінної з ім'ям myNumber і присвоєнням їй значення 10." />
+        <Label styleClass="label-text" text="Змінні в JavaScript можуть зберігати різні типи даних, включаючи об'єкти, числа, рядки, булеві значення та інші." />
+        <Label styleClass="label-text" text="Важливо правильно вибирати ключове слово для оголошення змінної, залежно від того, чи плануєте ви змінювати її значення." />
+    </VBox>
+
+    <VBox layoutX="20.0" layoutY="318.0" spacing="10">
+        <Label styleClass="label-text" text="Ключове слово 'let' використовується для оголошення змінних, значення яких може змінюватися. Наприклад, 'let age = 30;' дозволяє змінити значення 'age' у майбутньому." />
+        <Label styleClass="label-text" text="Ключове слово 'const' використовується для оголошення констант, значення яких не може бути змінено після ініціалізації. Наприклад, 'const height = 1.75;' означає, що значення 'height' залишиться незмінним." />
+    </VBox>
+
+     <VBox layoutX="850.0" layoutY="473.0" spacing="10">
+         <Label styleClass="label-header" text="Типи даних у JavaScript:" />
+         <Label styleClass="label-text" text="let для змінних, значення яких може змінюватися" />
+         <Label styleClass="label-text" text="const для констант, значення яких залишається незмінним" />
+         <Label styleClass="label-text" text="var (застарілий) для змінних" />
+         <Label styleClass="label-text" text="Типи даних: Number, String, Boolean, Object, null, undefined, Symbol" />
+     </VBox>
+
+     <VBox layoutX="1435.0" layoutY="473.0" spacing="10">
+         <Label styleClass="label-header" text="Приклади змінних:" />
+         <Label styleClass="label-text" text="let age = 30;" />
+         <Label styleClass="label-text" text="const height = 1.75;" />
+         <Label styleClass="label-text" text="let isStudent = false;" />
+         <Label styleClass="label-text" text="let name = 'John';" />
+     </VBox>
+    <VBox layoutX="29.0" layoutY="440.0" prefHeight="278.0" prefWidth="881.0" spacing="10">
+        <Label styleClass="label-header" text="Типи даних у JavaScript:" />
+        <Label styleClass="label-text" text="Number - числовий тип даних, який включає в себе як цілі числа, так і числа з плаваючою комою." />
+        <Label styleClass="label-text" text="String - тип даних для текстових рядків. Наприклад, 'let name = Josh '" />
+        <Label styleClass="label-text" text="Boolean - логічний тип даних, який може приймати лише два значення: true або false." />
+        <Label styleClass="label-text" text="Object - тип даних для структур даних, який може містити набір властивостей і методів." />
+        <Label styleClass="label-text" text="null - спеціальне значення, яке вказує на відсутність будь-якого об'єкта або значення." />
+        <Label styleClass="label-text" text="undefined - тип даних для змінних, яким не було присвоєно жодного значення." />
+        <Label prefHeight="27.0" prefWidth="878.0" styleClass="label-text" text="Symbol - унікальний і незмінний тип даних, який може використовуватися як ідентифікатор для властивостей об'єктів." />
+    </VBox>
+
+    <Button layoutX="29.0" layoutY="818.0" onAction="#backToMain" prefHeight="0.0" prefWidth="84.0" styleClass="quizButton" text="назад" />
+</AnchorPane>

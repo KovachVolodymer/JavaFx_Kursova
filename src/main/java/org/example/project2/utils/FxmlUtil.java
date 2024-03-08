@@ -23,12 +23,17 @@ public class FxmlUtil {
     }
 
     //new size scene can be set in the method switchScene
-    public void switchScene(ActionEvent event, String nameScene,Integer v,Integer v1) throws IOException {
+    public void switchScene(ActionEvent event, String nameScene,Integer v,Integer v1,boolean full) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(MainApplication.class.getResource(nameScene)));
         Scene scene = new Scene(root, v, v1);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setMaxHeight(v1);
+        window.setMaxWidth(v);
+        window.setMinHeight(v1);
+        window.setMinWidth(v);
         window.setScene(scene);
         window.show();
+        window.setFullScreen(full);
     }
 
 }

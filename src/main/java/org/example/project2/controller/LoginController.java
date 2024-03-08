@@ -30,7 +30,7 @@ public class LoginController {
     @FXML
     public void onRegisterButtonClick(ActionEvent actionEvent) {
         try {
-            fxmlUtil.switchScene(actionEvent, "/org/example/project2/authorization/register.fxml", 800, 500);
+            fxmlUtil.switchScene(actionEvent, "/org/example/project2/authorization/register.fxml", 800, 500, false);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -55,7 +55,7 @@ public class LoginController {
             return;
         }
         try {
-            fxmlUtil.switchScene(actionEvent, "/org/example/project2/mainPage.fxml", 800, 500);
+            fxmlUtil.switchScene(actionEvent, "/org/example/project2/mainPage.fxml", 800, 500, false);
         } catch (IOException e) {
             e.printStackTrace();
         }
