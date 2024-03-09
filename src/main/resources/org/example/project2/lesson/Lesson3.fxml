@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="880.0" prefWidth="1700.0" stylesheets="@../lessonStyle/lesson2.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project2.lesson.Lesson3Controller">
+
+    <Label layoutX="20" layoutY="20" styleClass="label-header" text="Урок 3: Умовні оператори в JavaScript" />
+
+    <VBox layoutX="31.0" layoutY="70.0" spacing="10">
+        <Label styleClass="label-header" text="Вступ до умовних операторів:" />
+        <Label styleClass="label-text" text="Умовні оператори використовуються для виконання коду на основі певних умов." />
+        <Label styleClass="label-text" text="Найпоширеніші умовні оператори в JavaScript - це if, else if, та else." />
+        <Label styleClass="label-text" text="Також існує тернарний оператор, який дозволяє виконати умову в одному рядку." />
+    </VBox>
+
+    <VBox layoutX="31.0" layoutY="305.0" spacing="10">
+        <Label styleClass="label-header" text="Приклади умовних операторів:" />
+        <Label styleClass="label-text" text="if (умова) { // код, який виконується, якщо умова істинна }" />
+        <Label styleClass="label-text" text="else if (інша умова) { // код, який виконується, якщо попередня умова була хибною, але ця істинна }" />
+        <Label styleClass="label-text" text="else { // код, який виконується, якщо всі попередні умови були хибними }" />
+        <Label styleClass="label-text" text="умова ? вираз1 : вираз2; // тернарний оператор" />
+    </VBox>
+
+    <VBox layoutX="897.0" layoutY="105.0" spacing="10">
+        <Label styleClass="label-header" text="Приклад з if:" />
+        <Label styleClass="label-text" text="if (age &gt; 18) { console.log('Ви повнолітній.'); }" />
+        <Label styleClass="label-text" text="Результат: 'Ви повнолітній.' (якщо age &gt; 18)" />
+    </VBox>
+
+    <!-- Приклад з if else -->
+    <VBox layoutX="894.0" layoutY="340.0" spacing="10">
+        <Label styleClass="label-header" text="Приклад з if else:" />
+        <Label styleClass="label-text" text="if (score &gt; 90) { console.log('Відмінно!'); } else { console.log('Потрібно більше навчатися.'); }" />
+        <Label styleClass="label-text" text="Результат: 'Відмінно!' або 'Потрібно більше навчатися.' залежно від score" />
+    </VBox>
+
+    <!-- Приклад з тернарним оператором -->
+    <VBox layoutX="888.0" layoutY="666.0" spacing="10">
+        <Label styleClass="label-header" text="Приклад з тернарним оператором:" />
+        <Label styleClass="label-text" text="let result = age &gt; 18 ? 'Ви повнолітній.' : 'Ви неповнолітній.';" />
+        <Label styleClass="label-text" text="Результат: 'Ви повнолітній.' або 'Ви неповнолітній.' залежно від age" />
+    </VBox>
+
+    <VBox layoutX="29.0" layoutY="542.0" prefWidth="1795.0" spacing="10">
+        <Label styleClass="label-header" text="Про тернарний оператор:" />
+        <Label prefHeight="25.0" prefWidth="1796.0" styleClass="label-text" text="Тернарний оператор - це короткий спосіб виконання умовних операцій. Він складається з трьох частин: умови, виразу, який виконується, якщо умова істинна, та виразу, який виконується, якщо умова хибна." />
+        <Label styleClass="label-text" text="Приклад: let accessAllowed = age &gt; 18 ? true : false; - цей код перевіряє, чи є вік більшим за 18, і присвоює змінній accessAllowed значення true або false відповідно." />
+    </VBox>
+
+    <Hyperlink layoutX="1435.0" layoutY="825.0" onAction="#openWikipedia" styleClass="hyperlink" text="Learn more about JavaScript Conditional Statements on Wikipedia" />
+
+    <Button layoutX="29.0" layoutY="818.0" onAction="#backToMain" prefHeight="0.0" prefWidth="84.0" styleClass="quizButton" text="назад" />
+</AnchorPane>

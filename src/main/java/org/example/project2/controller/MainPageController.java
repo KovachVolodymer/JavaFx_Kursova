@@ -36,7 +36,8 @@ public class MainPageController {
         fxmlUtil.switchScene(actionEvent, "/org/example/project2/lesson/Lesson2.fxml", 1700, 880, true);
     }
 
-    public void onLesson3Click(ActionEvent actionEvent) {
+    public void onLesson3Click(ActionEvent actionEvent) throws IOException {
+        fxmlUtil.switchScene(actionEvent, "/org/example/project2/lesson/Lesson3.fxml", 1700, 880, true);
     }
 
     public void onLesson4Click(ActionEvent actionEvent) {

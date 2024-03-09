@@ -1,0 +1,52 @@
+.label-header {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2a2a2a;
+}
+
+.label-text {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+}
+
+.hyperlink {
+    -fx-text-fill: #0275d8;
+    -fx-underline: true;
+}
+
+.quizButton {
+    -fx-background-color: #5cb85c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 20px;
+}
+
+.quizButton:hover {
+    -fx-background-color: #4cae4c;
+}
+
+/* Додаткові стилі для покращення візуального вигляду */
+.anchor-pane {
+    -fx-background-color: #f0f0f0;
+}
+
+.vbox {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+}
+
+/* Стилі для HBox, якщо ви вирішите їх використовувати */
+.hbox {
+    -fx-spacing: 15px;
+}
+
+/* Стилі для розміщення елементів */
+.label-header, .label-text, .hyperlink, .quizButton {
+    -fx-padding: 5px;
+}
