@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="880.0" prefWidth="1700.0" stylesheets="@../lessonStyle/lesson4.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project2.lesson.Lesson4Controller">
+
+    <Label layoutX="20" layoutY="20" styleClass="label-header" text="Урок 4: Цикли" />
+
+    <VBox layoutX="31.0" layoutY="102.0" spacing="10">
+        <Label styleClass="label-header" text="Вступ до циклів:" />
+        <Label styleClass="label-text" text="Цикли використовуються для повторення виконання коду декілька разів." />
+        <Label styleClass="label-text" text="Існують різні типи циклів в JavaScript: for, while, та do-while." />
+        <Label styleClass="label-text" text="Цикли дозволяють ефективно обробляти колекції даних, такі як масиви та об'єкти." />
+    </VBox>
+
+    <VBox layoutX="31.0" layoutY="277.0" prefHeight="99.0" prefWidth="1667.0" spacing="10">
+        <Label styleClass="label-header" text="Цикл for:" />
+        <Label prefHeight="17.0" prefWidth="1653.0" styleClass="label-text" text="Цикл 'for' використовується для повторення блоку коду певну кількість разів. Він має три частини: ініціалізація (let i = 0), умова продовження (i &lt; 5), та інкремент/декремент (i++). Це найбільш універсальний цикл." />
+        <Label styleClass="label-text" text="Приклад: for (let i = 0; i &lt; 5; i++) { console.log(i); } // Виводить числа від 0 до 4. Цей цикл часто використовується для ітерації по масивах та об'єктах." />
+        <Label styleClass="label-text" text="Важливо: Уникайте нескінченних циклів, встановлюючи коректну умову продовження та інкремент/декремент." />
+    </VBox>
+
+    <VBox layoutX="29.0" layoutY="430.0" spacing="10">
+        <Label styleClass="label-header" text="Цикл while:" />
+        <Label styleClass="label-text" text="Цикл 'while' виконує блок коду, доки задана умова є істинною. Це зручно, коли кількість ітерацій не відома заздалегідь. Цикл 'while' ідеально підходить для читання даних до досягнення певної умови." />
+        <Label styleClass="label-text" text="Приклад: let i = 0; while (i &lt; 5) { console.log(i); i++; } // Також виводить числа від 0 до 4. Використовуйте 'while', коли необхідно виконати код до виконання умови." />
+        <Label styleClass="label-text" text="Порада: Будьте обережні з умовами виходу з циклу, щоб уникнути нескінченних циклів." />
+    </VBox>
+
+    <VBox layoutX="31.0" layoutY="610.0" spacing="10">
+        <Label styleClass="label-header" text="Цикл do-while:" />
+        <Label styleClass="label-text" text="Цикл 'do-while' схожий на 'while', але він гарантовано виконує блок коду хоча б один раз, перш ніж перевіряти умову. Це корисно, коли потрібно виконати код мінімум один раз незалежно від умови." />
+        <Label styleClass="label-text" text="Приклад: let i = 0; do { console.log(i); i++; } while (i &lt; 5); // Виводить числа від 0 до 4, але з використанням do-while. Використовуйте, коли потрібно гарантувати виконання коду хоча б один раз." />
+        <Label styleClass="label-text" text="Зауваження: Цикл 'do-while' може бути корисним у сценаріях, де умова для продовження циклу визначається в кінці ітерації." />
+    </VBox>
+
+    <Hyperlink layoutX="1336.0" layoutY="819.0" onAction="#openWikipedia" styleClass="hyperlink" text="Learn more about JavaScript Loops on Wikipedia" />
+
+    <Button layoutX="29.0" layoutY="818.0" onAction="#backToMain" prefHeight="0.0" prefWidth="84.0" styleClass="quizButton" text="назад" />
+</AnchorPane>

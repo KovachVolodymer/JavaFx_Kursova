@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="880.0" prefWidth="1700.0" stylesheets="@../lessonStyle/lesson2.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project2.lesson.Lesson3Controller">
+<AnchorPane prefHeight="880.0" prefWidth="1700.0" stylesheets="@../lessonStyle/lesson3.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project2.lesson.Lesson3Controller">
 
     <Label layoutX="20" layoutY="20" styleClass="label-header" text="Урок 3: Умовні оператори в JavaScript" />
 
