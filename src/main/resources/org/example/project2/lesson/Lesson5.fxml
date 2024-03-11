@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="880.0" prefWidth="1700.0" stylesheets="@../lessonStyle/lesson5.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project2.lesson.Lesson5Controller">
+
+    <Label layoutX="20" layoutY="20" styleClass="label-header" text="Урок 5: Функції" />
+    <VBox layoutX="29.0" layoutY="662.0" spacing="10">
+        <Label styleClass="label-header" text="Теорія рекурсії:" />
+        <Label styleClass="label-text" text="Рекурсія - це техніка в програмуванні, коли функція викликає сама себе. Вона дозволяє розв'язувати складні задачі, розбиваючи їх на більш прості підзадачі того ж типу." />
+        <Label styleClass="label-text" text="Ключовими елементами рекурсивної функції є базовий випадок (умова зупинки) та рекурсивний виклик. Без базового випадку функція викликатиме сама себе нескінченно." />
+    </VBox>
+
+    <VBox layoutX="29.0" layoutY="231.0" spacing="10">
+        <Label styleClass="label-header" text="Оголошення функції:" />
+        <Label styleClass="label-text" text="Функція оголошується за допомогою ключового слова 'function', за яким слідує ім'я функції, список параметрів у дужках та тіло функції у фігурних дужках." />
+        <Label styleClass="label-text" text="Приклад: function sayHello(name) { console.log('Привіт, ' + name); }" />
+    </VBox>
+
+    <VBox layoutX="29.0" layoutY="364.0" spacing="10">
+        <Label styleClass="label-header" text="Виклик функції:" />
+        <Label styleClass="label-text" text="Функцію викликають, вказуючи її ім'я та передаючи необхідні аргументи у дужках." />
+        <Label styleClass="label-text" text="Приклад: sayHello('Іван');" />
+    </VBox>
+
+    <VBox layoutX="31.0" layoutY="486.0" spacing="10">
+        <Label styleClass="label-header" text="Повернення значення:" />
+        <Label styleClass="label-text" text="Функція може повертати значення за допомогою ключового слова 'return'." />
+        <Label styleClass="label-text" text="Приклад: function add(a, b) { return a + b; }" />
+        <Label styleClass="label-text" text="let result = add(5, 3); // result має значення 8" />
+    </VBox>
+
+    <Button layoutX="29.0" layoutY="818.0" onAction="#backToMain" prefHeight="0.0" prefWidth="84.0" styleClass="quizButton" text="назад" />
+
+       <VBox layoutX="963.0" layoutY="309.0" spacing="10">
+        <Label styleClass="label-header" text="Приклад рекурсії:" />
+        <Label styleClass="label-text" text="Розглянемо функцію для обчислення факторіалу числа:" />
+        <Label styleClass="label-text" text="public static int factorial(int n) {" />
+        <Label styleClass="label-text" text="    if (n == 1) {" />
+        <Label styleClass="label-text" text="        return 1; // Базовий випадок" />
+        <Label styleClass="label-text" text="    } else {" />
+        <Label styleClass="label-text" text="        return n * factorial(n - 1); // Рекурсивний виклик" />
+        <Label styleClass="label-text" text="    }" />
+        <Label styleClass="label-text" text="}" />
+        <Label styleClass="label-text" text="Факторіал числа 5 (5!) дорівнює 120." />
+    </VBox>
+
+    <VBox layoutX="31.0" layoutY="79.0" spacing="10">
+        <Label styleClass="label-header" text="Теорія функцій:" />
+        <Label styleClass="label-text" text="Функція в програмуванні - це блок коду, який призначений для виконання певної задачі." />
+        <Label styleClass="label-text" text="Функція може приймати параметри, які використовуються всередині неї для виконання операцій, та може повертати результат своєї роботи." />
+        <Label styleClass="label-text" text="Використання функцій дозволяє структурувати програму на логічні блоки, перевикористовувати код та зробити його більш читабельним." />
+    </VBox>
+
+</AnchorPane>
