@@ -65,8 +65,4 @@ public class User {
         return user != null;
     }
 
-
-
-
-
 }

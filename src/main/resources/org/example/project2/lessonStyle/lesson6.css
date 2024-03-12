@@ -1,0 +1,28 @@
+.label-header {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.label-text {
+    -fx-font-size: 16px;
+    -fx-text-fill: #666;
+}
+
+.hyperlink {
+    -fx-font-size: 14px;
+    -fx-text-fill: #0077cc;
+}
+
+.quizButton {
+    -fx-background-color: #5cb85c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 20px;
+}
+
+.quizButton:hover {
+    -fx-background-color: #4cae4c;
+}

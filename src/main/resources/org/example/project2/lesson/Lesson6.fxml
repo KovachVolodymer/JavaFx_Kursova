@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="880.0" prefWidth="1700.0" stylesheets="@../lessonStyle/lesson6.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project2.lesson.Lesson6Controller">
+
+    <Label layoutX="20" layoutY="20" styleClass="label-header" text="Урок 6: Масиви" />
+
+    <VBox layoutX="29.0" layoutY="535.0" spacing="10">
+        <Label styleClass="label-header" text="Робота з масивами в JavaScript:" />
+        <Label styleClass="label-text" text="У JavaScript, масиви є глобальними об'єктами, які використовуються для зберігання даних. Масиви в JavaScript можуть містити елементи різних типів." />
+        <Label styleClass="label-text" text="Для створення масиву можна використовувати літерал масиву або конструктор Array. Наприклад: let myArray = [1, 2, 3]; або let myArray = new Array(1, 2, 3);" />
+        <Label styleClass="label-text" text="Масиви в JavaScript мають ряд вбудованих методів для маніпуляції даними, таких як push(), pop(), shift(), unshift(), і багато інших." />
+        <Label styleClass="label-text" text="Для ітерації по масиву можна використовувати цикли, наприклад for або forEach()." />
+        <Label styleClass="label-text" text="Масиви можуть бути багатовимірними, що дозволяє створювати структури даних, як-от матриці." />
+    </VBox>
+
+    <VBox layoutX="1071.0" layoutY="747.0" spacing="10">
+        <Label styleClass="label-header" text="Додаткові ресурси:" />
+        <Label styleClass="label-text" text="Для отримання більш детальної інформації про масиви в JavaScript, відвідайте:" />
+        <Hyperlink onAction="#openWebPage" styleClass="label-text" text="Вікіпедія про масиви в JavaScript">
+            https://en.wikipedia.org/wiki/Array_data_structure#JavaScript
+        </Hyperlink>
+    </VBox>
+
+    <VBox layoutX="31.0" layoutY="142.0" spacing="10">
+        <Label styleClass="label-header" text="Оголошення масивів:" />
+        <Label styleClass="label-text" text="Для оголошення масиву використовується синтаксис: тип[] назваМасиву;" />
+        <Label styleClass="label-text" text="Приклад: int[] myArray;" />
+        <Label styleClass="label-text" text="Масив можна ініціалізувати використовуючи оператор new: myArray = new int[10];" />
+    </VBox>
+
+    <VBox layoutX="29.0" layoutY="335.0" spacing="10">
+        <Label styleClass="label-header" text="Приклади використання масивів:" />
+        <Label styleClass="label-text" text="Для доступу до елементів масиву використовується індексація: myArray[0] = 5;" />
+        <Label styleClass="label-text" text="Цикл for може використовуватися для ітерації по масиву: for(int i = 0; i &lt; myArray.length; i++) { System.out.println(myArray[i]); }" />
+        <Label styleClass="label-text" text="Масиви можуть використовуватися для зберігання даних, які потрібно обробити послідовно." />
+    </VBox>
+
+    <Button layoutX="29.0" layoutY="818.0" onAction="#backToMain" prefHeight="0.0" prefWidth="84.0" styleClass="quizButton" text="назад" />
+
+</AnchorPane>

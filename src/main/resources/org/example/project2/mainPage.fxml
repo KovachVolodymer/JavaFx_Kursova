@@ -28,7 +28,7 @@
                 <Button fx:id="lesson3Button" text="Урок 3: Умовні оператори" onAction="#onLesson3Click"/>
                 <Button fx:id="lesson4Button" text="Урок 4: Цикли" onAction="#onLesson4Click"/>
                 <Button fx:id="lesson5Button" text="Урок 5: Функції" onAction="#onLesson5Click"/>
-                <Button fx:id="lesson6Button" text="Урок 6: Об'єкти та масиви" onAction="#onLesson6Click"/>
+                <Button fx:id="lesson6Button" text="Урок 6: Масиви" onAction="#onLesson6Click"/>
             </children>
         </VBox>
     </children>
